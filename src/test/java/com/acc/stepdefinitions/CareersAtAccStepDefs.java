@@ -6,6 +6,7 @@ import com.acc.cucumberhelper.TestContext;
 import com.acc.pageobjects.CareersAtAccPage;
 
 import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 
 public class CareersAtAccStepDefs {
 
@@ -20,7 +21,7 @@ public class CareersAtAccStepDefs {
 	}
 	
 	
-	@Then("I search {string} jobs in {word}")
+	@When("I search {string} jobs in {word}")
 	public void i_search_jobs_in_given_Location(String jobName, String location) throws Throwable {
 	  careersAtAccPage.typeJobName(jobName);
 	  careersAtAccPage.selectLocation(location);

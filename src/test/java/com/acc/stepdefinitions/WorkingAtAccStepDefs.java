@@ -3,7 +3,7 @@ package com.acc.stepdefinitions;
 import com.acc.cucumberhelper.TestContext;
 import com.acc.pageobjects.WorkingAtAccPage;
 
-import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 
 public class WorkingAtAccStepDefs {
 	
@@ -17,7 +17,7 @@ public class WorkingAtAccStepDefs {
 		
 	}
 
-	@Then("I click on careers and navigate to Careers page")
+	@When("I click on careers and navigate to Careers page")
 	public void i_click_on_careers_and_navigate_to_Careers_page() throws Throwable {
 		workingAtAccPage.clickOnCarreerAtAccLink();
 
