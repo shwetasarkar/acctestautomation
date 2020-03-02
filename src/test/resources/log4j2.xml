@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+	<Appenders>
+		<File name="file" fileName="logs/dump.log" append="false"
+			immediateFlush="false">
+			<PatternLayout
+				pattern="%d{yyy-MM-dd HH:mm:ss} %5p %c{1} - %m%n" />
+		</File>
+		<Console name="console" target="SYSTEM_OUT">
+			<PatternLayout
+				pattern="%d{yyy-MM-dd HH:mm:ss} %5p %c{1} - %m%n" />
+		</Console>
+	</Appenders>
+	<Loggers>
+		<Root level="debug">
+			<AppenderRef ref="console" />
+			<AppenderRef ref="file" />
+		</Root>
+	</Loggers>
+</Configuration>
